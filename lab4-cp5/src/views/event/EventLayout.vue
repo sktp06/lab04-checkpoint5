@@ -29,8 +29,6 @@ export default {
             name: "404Resource",
             params: { resource: "passenger" },
           });
-        } else {
-          this.$router.push({ name: "NetworkError" });
         }
       }),
       EventService.getAirline(this.id)
@@ -43,8 +41,6 @@ export default {
               name: "404Resource",
               params: { resource: "airline" },
             });
-          } else {
-            this.$router.push({ name: "NetworkError" });
           }
         });
   },
